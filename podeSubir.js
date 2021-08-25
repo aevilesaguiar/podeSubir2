@@ -1,5 +1,5 @@
 function podeSubir(altura, vemAcompanhado){
-    let podeSubir= false;
+    let pSubir= false;
 
     if(altura>=1.40 && altura<2.00){
         return "Acesso autorizado";
@@ -12,4 +12,4 @@ function podeSubir(altura, vemAcompanhado){
     }
 }
 
-console.log(podeSubir(1.10, false))
+console.log(podeSubir(1.10, false));

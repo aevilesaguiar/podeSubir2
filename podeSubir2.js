@@ -1,16 +1,17 @@
 function podeSubir(altura, vemAcompanhado){
-    let podeSubir= false;
+
+    let subir= false;
 
     if(altura>=1.40 && altura<2.00){
-        podeSubir=true;
+        subir=true;
     }
-    else if(altura<1.40 && vemAcompanhado ){
-        podeSubir=true;
+    else if(altura<1.40 && vemAcompanhado && altura >=1.20 ){
+        subir=true;
     }
     else{
-        podeSubir=false;
+        subir=false;
     }
-    return podeSubir
+    return subir
 }
 
-console.log(podeSubir(1.42, false))
+console.log(podeSubir(1.19, true))
